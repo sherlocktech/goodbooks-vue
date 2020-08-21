@@ -31,8 +31,14 @@ export default class Book extends Vue {
 .book-wrapper {
   margin: 0.8rem;
   padding: 0.4rem;
-  border: 1px solid #555;
+  background-color: #fafafa;
   border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.book-wrapper:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .book-title {
