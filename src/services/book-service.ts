@@ -9,4 +9,10 @@ export default class BookService {
 
         return result.data;
     }
+    
+    public async addNewBook(book: IBook) {
+        const result = await axios.post(`${this.API_URL}/books/`, book);
+
+        return result.data;
+    }
 }
